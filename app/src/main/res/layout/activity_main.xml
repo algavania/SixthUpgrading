@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".activity.MainActivity">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/profile_image"
+        android:layout_width="@dimen/_90sdp"
+        android:layout_height="@dimen/_90sdp"
+        android:src="@drawable/michelangelo"
+        android:layout_above="@id/tv_text"
+        android:layout_centerInParent="true" />
+
+    <TextView
+        android:id="@+id/tv_text"
+        android:text="Animated Text!"
+        android:textSize="@dimen/_30ssp"
+        android:layout_marginVertical="@dimen/_5sdp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/btn_click"
+        android:layout_centerInParent="true"/>
+
+    <Button
+        android:id="@+id/btn_click"
+        android:text="Click"
+        android:layout_centerInParent="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+</RelativeLayout>
